@@ -11,6 +11,10 @@ namespace ParcialZalazar.Controllers
         public ActionResult Cosmo()
         {
             return View();
-        }     
+        }
+        public ActionResult Constelaciones1()
+        {
+            return View();
+        }
     }
 }

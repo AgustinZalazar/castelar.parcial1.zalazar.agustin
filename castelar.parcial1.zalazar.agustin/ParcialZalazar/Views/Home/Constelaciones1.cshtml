@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Constelaciones</title>
+    <script src="~/Scripts/main.js"></script>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="contenido-constelaciones">
+        <form>
+            <label for="iSiglo">Siglo:</label><br>
+            <input type="text" id="iSiglo" name="iSiglo" required><br>
+            <label for="iNombre">Nombre:</label><br>
+            <input type="text" id="iNombre" name="iNombre" required>
+            <br>
+            <button type="reset" onclick="GuardarConst();">Agregar constelacion</button>
+        </form>
+
+        <h2>Constelaciones</h2>
+
+        <table id="table">
+            <tr>
+                <th>Siglo</th>
+                <th>Nombre</th>
+            </tr>
+
+        </table>
+    </div>
+    
+</body>
+</html>
